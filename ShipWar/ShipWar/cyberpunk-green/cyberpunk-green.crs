@@ -1,0 +1,42 @@
+﻿[NWPen]
+Path=Cyberpunk Green Handwriting.ani
+
+[Help]
+Path=Cyberpunk Green Help Select.ani
+
+[SizeWE]
+Path=Cyberpunk Green Horizontal Resize.ani
+
+[Hand]
+Path=Cyberpunk Green Link Select.ani
+
+[UpArrow]
+Path=Cyberpunk Green Alternate Select.ani
+
+[Wait]
+Path=Cyberpunk Green Busy.ani
+
+[SizeNWSE]
+Path=Cyberpunk Green Diagonal Resize 1.ani
+
+[SizeNESW]
+Path=Cyberpunk Green Diagonal Resize 2.ani
+
+[No]
+Path=Cyberpunk Green Unavailable.ani
+
+[SizeAll]
+Path=Cyberpunk Green Move.ani
+
+[Crosshair]
+Path=Cyberpunk Green Precision Select.ani
+
+[IBeam]
+Path=Cyberpunk Green Text Select.ani
+
+[SizeNS]
+Path=Cyberpunk Green Vertical Resize.ani
+
+[AppStarting]
+Path=Cyberpunk Green Working in Background.ani
+

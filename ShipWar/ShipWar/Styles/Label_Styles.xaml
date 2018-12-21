@@ -1,0 +1,97 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ShipWar.Styles">
+    <!-- ____________________________ Label Styles ____________________________ -->
+    <!-- Title Bar -->
+    <!-- Main Label -->
+    <Style  x:Key="TitelBar_MainLabel"
+            TargetType="Label">
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="860"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontFamily" Value="Corbel"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+    </Style>
+    <!-- Ship War Default Label -->
+    <Style x:Key="ShipWarDefaultLabel"
+            TargetType="Label">
+        <Setter Property="FontFamily" Value="Copperplate Gothic Bold"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4D3114" Offset="0"/>
+                    <GradientStop Color="#FF1B1107" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- Ship War Console Label -->
+    <Style x:Key="ShipWarConsoleLabel"
+            TargetType="Label">
+        <Setter Property="FontFamily" Value="Consolas"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground" Value="#FF12C300"/>
+    </Style>
+    <!-- Ship War Default TextBlock -->
+    <Style x:Key="ShipWarDefaultTextBlock"
+            TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Copperplate Gothic Bold"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4D3114" Offset="0"/>
+                    <GradientStop Color="#FF1B1107" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- Messagebar Header Label -->
+    <Style x:Key="MessagebarHeaderLabel"
+           BasedOn="{StaticResource ShipWarDefaultLabel }"
+            TargetType="Label">
+        <Setter Property="FontSize" Value="24"/>
+    </Style>
+    <!-- Messagebar Text Label -->
+    <Style x:Key="MessagebarTextBlock"
+           BasedOn="{StaticResource ShipWarDefaultTextBlock }"
+            TargetType="TextBlock">
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+    <!-- Button Label -->
+    <Style x:Key="SW_Button_Label"
+           TargetType="Label"
+           BasedOn="{StaticResource ShipWarDefaultLabel}">
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <!-- ComboBox Label -->
+    <Style x:Key="SW_ComboBox_Label"
+           TargetType="Label"
+           BasedOn="{StaticResource ShipWarDefaultLabel}">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+    <!-- GameBoard Label -->
+    <!-- GameBoard Coords -->
+    <Style x:Key="GB_Coords_Label"
+           TargetType="Label"
+           BasedOn="{StaticResource ShipWarDefaultLabel}">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Backgrounds/GameBoard_Label_Background.png"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+
+</ResourceDictionary>

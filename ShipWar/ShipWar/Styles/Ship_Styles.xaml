@@ -1,0 +1,440 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ShipWar.Styles">
+    <!-- _____________________________________________ SHIPS _____________________________________________-->
+    <!-- ****** Computer Ships ****** -->
+    <Style x:Key="GB_Button_ComputerShip"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                                BorderThickness="1" BorderBrush="LimeGreen">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- ****** Ship 1 ***** -->
+    <!-- *** NORTH *** -->
+    <Style x:Key="GB_Button_Ship1_1_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship1/NORTH/Ship1_1_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship1_2_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship1/NORTH/Ship1_2_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** EAST *** -->
+    <Style x:Key="GB_Button_Ship1_1_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship1/EAST/Ship1_1_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship1_2_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship1/EAST/Ship1_2_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** SOUTH *** -->
+    <Style x:Key="GB_Button_Ship1_1_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship1/SOUTH/Ship1_1_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship1_2_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship1/SOUTH/Ship1_2_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** WEST *** -->
+    <Style x:Key="GB_Button_Ship1_1_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship1/WEST/Ship1_1_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship1_2_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship1/WEST/Ship1_2_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- ****** Ship 2 ****** -->
+    <!-- *** NORTH *** -->
+    <Style x:Key="GB_Button_Ship2_1_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/NORTH/Ship2_1_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship2_2_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/NORTH/Ship2_2_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship2_3_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/NORTH/Ship2_3_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** EAST *** -->
+    <Style x:Key="GB_Button_Ship2_1_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/EAST/Ship2_1_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship2_2_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/EAST/Ship2_2_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship2_3_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/EAST/Ship2_3_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** SOUTH *** -->
+    <Style x:Key="GB_Button_Ship2_1_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/SOUTH/Ship2_1_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship2_2_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/SOUTH/Ship2_2_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship2_3_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/SOUTH/Ship2_3_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** WEST *** -->
+    <Style x:Key="GB_Button_Ship2_1_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/WEST/Ship2_1_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship2_2_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/WEST/Ship2_2_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship2_3_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship2/WEST/Ship2_3_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- ****** Ship 3 ******* -->
+    <!-- *** NORTH *** -->
+    <Style x:Key="GB_Button_Ship3_1_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/NORTH/Ship3_1_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_2_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/NORTH/Ship3_2_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_3_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/NORTH/Ship3_3_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_4_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/NORTH/Ship3_4_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** EAST *** -->
+    <Style x:Key="GB_Button_Ship3_1_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/EAST/Ship3_1_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_2_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/EAST/Ship3_2_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_3_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/EAST/Ship3_3_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_4_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/EAST/Ship3_4_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** SOUTH *** -->
+    <Style x:Key="GB_Button_Ship3_1_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/SOUTH/Ship3_1_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_2_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/SOUTH/Ship3_2_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_3_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/SOUTH/Ship3_3_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_4_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/SOUTH/Ship3_4_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** WEST *** -->
+    <Style x:Key="GB_Button_Ship3_1_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/WEST/Ship3_1_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_2_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/WEST/Ship3_2_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_3_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/WEST/Ship3_3_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship3_4_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship3/WEST/Ship3_4_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- ****** Ship 4 ****** -->
+    <!-- *** NORTH *** -->
+    <Style x:Key="GB_Button_Ship4_1_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship4/NORTH/Ship4_1_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship4_2_NORTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship4/NORTH/Ship4_2_NORTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** EAST *** -->
+    <Style x:Key="GB_Button_Ship4_1_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship4/EAST/Ship4_1_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship4_2_EAST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship4/EAST/Ship4_2_EAST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** SOUTH *** -->
+    <Style x:Key="GB_Button_Ship4_1_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship4/SOUTH/Ship4_1_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship4_2_SOUTH"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship4/SOUTH/Ship4_2_SOUTH.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- *** WEST *** -->
+    <Style x:Key="GB_Button_Ship4_1_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship4/WEST/Ship4_1_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="GB_Button_Ship4_2_WEST"
+           BasedOn="{StaticResource GB_SetterMode_Mainfield_Default_Button}"
+           TargetType="Button">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/ShipWar;component/Pictures/Ships/Ship4/WEST/Ship4_2_WEST.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

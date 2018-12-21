@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipWar", "ShipWar\ShipWar.csproj", "{5F53ED61-694F-4606-9D72-79C64B4294A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F53ED61-694F-4606-9D72-79C64B4294A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F53ED61-694F-4606-9D72-79C64B4294A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F53ED61-694F-4606-9D72-79C64B4294A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F53ED61-694F-4606-9D72-79C64B4294A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A9AAE51-9547-4CD8-A55F-CA2749F9B65D}
+	EndGlobalSection
+EndGlobal

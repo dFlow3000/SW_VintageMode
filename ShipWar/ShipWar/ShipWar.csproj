@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F53ED61-694F-4606-9D72-79C64B4294A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ShipWar</RootNamespace>
+    <AssemblyName>ShipWar</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sw_logo_little_steel_o3y_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddNewPlayer.xaml.cs">
+      <DependentUpon>AddNewPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ComputerCoordsIntelligence.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="Coords.cs" />
+    <Compile Include="GameBoardField.cs" />
+    <Compile Include="INIFile.cs" />
+    <Compile Include="PlacedShips.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Ship.cs" />
+    <Compile Include="Singleplayer_GameBoard.cs" />
+    <Compile Include="Singleplayer_GameBoard_AttackMode.xaml.cs">
+      <DependentUpon>Singleplayer_GameBoard_AttackMode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Singleplayer_GameBoard_SetterMode.xaml.cs">
+      <DependentUpon>Singleplayer_GameBoard_SetterMode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Singleplayer_UserSelect.xaml.cs">
+      <DependentUpon>Singleplayer_UserSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StartMenue.xaml.cs">
+      <DependentUpon>StartMenue.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddNewPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Singleplayer_GameBoard_AttackMode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Singleplayer_GameBoard_SetterMode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Singleplayer_UserSelect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartMenue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Button_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Form_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Label_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Ship_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBox_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Cursors\Cyberpunk Green Alternate Move.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Alternate Select.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Busy.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Diagonal Resize 1.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Diagonal Resize 2.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Globe Max.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Globe.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Handwriting.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Help Select.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Horizontal Resize.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Link Select.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Move.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Normal Select.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Precision Select.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Skull Max.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Skull Select.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Skull.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Text Select.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Unavailable.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Vertical Resize.ani" />
+    <Resource Include="Cursors\Cyberpunk Green Working in Background.ani" />
+    <Resource Include="Cursors\cyberpunk-green.crs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\background2_1000x600_Cut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Logo\sw_Logo.png" />
+    <Resource Include="Pictures\Logo\sw_Logo_Vintage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="580b585b2edbce24c47b2651.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Logo\sw_Logo_Little.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_Multiplayer.png" />
+    <Resource Include="Pictures\Button\BTN_Singleplayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_Multiplayer_Pressed.png" />
+    <Resource Include="Pictures\Button\BTN_Singleplayer_Pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Logo\sw_Logo_Little_Steel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sw_logo_little_steel_o3y_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Logo\sw_Logo_Steel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\background1_hell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Form\CMBX_Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_NewPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ocean1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\ocean1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\GameBoard_Label_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_GameBoard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_GameBoardDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\GameBoard_Border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\GameBoard_Info_Big.png" />
+    <Resource Include="Pictures\Backgrounds\GameBoard_Info_Little.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_TurnShip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Nav_East.png" />
+    <Resource Include="Pictures\Backgrounds\Nav_North.png" />
+    <Resource Include="Pictures\Backgrounds\Nav_South.png" />
+    <Resource Include="Pictures\Backgrounds\Nav_West.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Ships\Ship1\EAST\Ship1_1_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship1\NORTH\Ship1_1_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship1\EAST\Ship1_2_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship1\NORTH\Ship1_2_NORTH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Ships\Ship2\EAST\Ship2_1_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship2\NORTH\Ship2_1_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship2\SOUTH\Ship2_1_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship2\WEST\Ship2_1_WEST.png" />
+    <Resource Include="Pictures\Ships\Ship2\EAST\Ship2_2_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship2\NORTH\Ship2_2_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship2\SOUTH\Ship2_2_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship2\WEST\Ship2_2_WEST.png" />
+    <Resource Include="Pictures\Ships\Ship2\EAST\Ship2_3_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship2\NORTH\Ship2_3_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship2\SOUTH\Ship2_3_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship2\WEST\Ship2_3_WEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Ships\Ship1\SOUTH\Ship1_1_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship1\WEST\Ship1_1_WEST.png" />
+    <Resource Include="Pictures\Ships\Ship1\SOUTH\Ship1_2_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship1\WEST\Ship1_2_WEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_DumpShip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_DumpShip_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Radar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\INST_1.png" />
+    <Resource Include="Pictures\Backgrounds\INST_Warning_Table_1.png" />
+    <Resource Include="Pictures\Backgrounds\INST_Warning_Table_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\INST_Warning_Table_3.png" />
+    <Resource Include="Pictures\Backgrounds\INST_Warning_Table_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\INST_2_1.png" />
+    <Resource Include="Pictures\Backgrounds\INST_2_2.png" />
+    <Resource Include="Pictures\Backgrounds\INST_2_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\BTN_RecycleShip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_2.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_3.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_4.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_10.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_11.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_12.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_13.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_14.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_15.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_16.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_17.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_18.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_6.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_7.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_8.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\INST_3_1.png" />
+    <Resource Include="Pictures\Backgrounds\INST_3_2.png" />
+    <Resource Include="Pictures\Backgrounds\INST_3_3.png" />
+    <Resource Include="Pictures\Backgrounds\INST_4_1.png" />
+    <Resource Include="Pictures\Backgrounds\INST_4_2.png" />
+    <Resource Include="Pictures\Backgrounds\INST_4_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\FlatScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\OncleSam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\TheSalute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Big_FlatScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\Coward.png" />
+    <Resource Include="Pictures\Button\SignIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\ToogleDown.png" />
+    <Resource Include="Pictures\Button\ToogleUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_10_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_11_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_12_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_13_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_14_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_15_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_16_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_17_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_18_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_1_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_2_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_3_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_4_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_5_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_6_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_7_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_8_Inner.png" />
+    <Resource Include="Pictures\Backgrounds\Radar\Inner_Radar\INST_Radar_9_Inner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Radar\INST_Radar_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Radar\Radar_Background_Inner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\Radar\Radar_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Ships\Ship3\EAST\Ship3_1_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship3\NORTH\Ship3_1_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship3\SOUTH\Ship3_1_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship3\WEST\Ship3_1_WEST.png" />
+    <Resource Include="Pictures\Ships\Ship3\EAST\Ship3_2_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship3\NORTH\Ship3_2_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship3\SOUTH\Ship3_2_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship3\WEST\Ship3_2_WEST.png" />
+    <Resource Include="Pictures\Ships\Ship3\EAST\Ship3_3_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship3\NORTH\Ship3_3_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship3\SOUTH\Ship3_3_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship3\WEST\Ship3_3_WEST.png" />
+    <Resource Include="Pictures\Ships\Ship3\EAST\Ship3_4_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship3\NORTH\Ship3_4_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship3\SOUTH\Ship3_4_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship3\WEST\Ship3_4_WEST.png" />
+    <Resource Include="Pictures\Ships\Ship4\EAST\Ship4_1_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship4\NORTH\Ship4_1_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship4\SOUTH\Ship4_1_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship4\WEST\Ship4_1_WEST.png" />
+    <Resource Include="Pictures\Ships\Ship4\EAST\Ship4_2_EAST.png" />
+    <Resource Include="Pictures\Ships\Ship4\NORTH\Ship4_2_NORTH.png" />
+    <Resource Include="Pictures\Ships\Ship4\SOUTH\Ship4_2_SOUTH.png" />
+    <Resource Include="Pictures\Ships\Ship4\WEST\Ship4_2_WEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\GameBoard_Bottom_background.png" />
+    <Resource Include="Pictures\Backgrounds\GameBoard_OrientationRecycle_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cursors\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Form\Red_Light_Off.png" />
+    <Resource Include="Pictures\Form\Red_Light_On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Button\ShipHit.png" />
+    <Resource Include="Pictures\Button\WaterHit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
